@@ -1,0 +1,246 @@
+
+/*--------For Global-----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #feea4f, #00f2fe);
+    padding: 20px;
+}
+ /*------------Form Section---------------------*/
+.form-container {
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    margin: 20px -100px 0;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #c7fe4f;
+    box-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #000000;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    grid-column: span 2;
+}
+
+.btn:hover {
+    background: #2f8ef7;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 22px;
+    }
+}
+
+  /*------------------record.html dashboard section--------------------------*/
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+
+    }       
+
+
+h1{
+     text-align:center;
+     margin-bottom:25px;
+     color:#333;
+     font-family:verdana,Tahoma, sans-serif;
+    }
+
+ .table-container{
+    background:#fff;
+     border-radius:15px;
+     overflow-x:auto;
+     box-shadow:0 4px 10px rgba(0,0,0,0.1);
+     width:100%;
+        }
+
+table{
+       width:100%;
+       border-collapse:collapse;
+       min-width:700px;
+    }
+
+thead{
+   background:#fefefe;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    color:#000000;
+    }
+
+th, td{
+     padding:15px;
+      text-align:left;
+       border-bottom:1px solid #ddd;
+    }
+
+tr:hover{
+   background:#f1f1f1;
+    }
+
+.no-records{
+   text-align:center;
+   padding:20px;
+    color:#666;
+        }
+
+ @media (max-width:768px){
+            table{
+                min-width:600px;
+            }
+
+            th, td{
+                padding:12px;
+                font-size:14px;
+            }
+        }
+
+.button{
+
+    padding:10px;
+    margin:40px;
+    color:white;
+    margin: left 190px;
+    display:fixed;
+    background-color: #f2f4f5;
+    font-size:16px;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    border:2px solid #000000;
+}
+
+ .button:hover{
+    background-color:#00b2fe;
+    cursor:pointer;
+ }
+
+
+/*--------Responsive Design for Ipad---------------*/
+
+ @media screen and (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form button {
+        grid-column: span 1;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
+
+
+/*--------Responsive Design for Mobile---------------*/
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        width: 100%;
+        margin: 2px 0;
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+ 
