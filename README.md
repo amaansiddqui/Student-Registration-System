@@ -17,4 +17,7 @@ A simple front-end Student Registration System.
 ## Run
 1. Open `index.html` in a browser.
 2. Register students and view records.
-
+   
+## Github
+- Repo link- https://github.com/amaansiddqui/Student-Registration-System
+- Deploy Link - https://amaansiddqui.github.io/Student-Registration-System/
